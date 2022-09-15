@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo-list</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@500&display=swap" rel="stylesheet">
+	<style>
+		body{
+			background: #0c2e45;
+			font-family: 'Lexend Deca', sans-serif;
+			font-size: 18px;
+		}
+		.task{
+			display: flex;
+			justify-content: center;
+			gap: 1rem;
+			border-radius: 1rem;
+		}
+		button{
+			background: #1c201e;
+			border-radius: 1.7rem;
+			color: red;
+			border-color: #004fd6;
+		}
+		input{
+			background: #1c201e;
+			border-radius: 1.7rem;
+			color: #fff;
+			text-align: center;
+			border-color: #004fd6;
+		}
+		@media screen and (max-width: 1440px) {
+    body{
+        max-width: 95%;
+    }
+    input, button{
+		display: flex;
+		flex-direction: column;
+		width: 90%;
+	}
+    
+}
+	
+	</style>
+</head>
+<body>
+    <header class="container text-center mt-5 mb-4 text-secondary">
+		<h1 class="">Task Plan</h1>
+		<form id="task-form">
+			<input class="rounded-pill w-50 border border-primary text-center text-secondary text-bg-dark"
+				type="text" 
+				name="new-task-input" 
+				id="new-task-input" 
+				placeholder="What your plan for the day?" />
+			<input class="rounded-pill border border-primary text-danger bg-dark"
+				type="submit"
+				id="new-task-submit" 
+				value="Add task" />
+		</form>
+	</header>
+	<main class=" text-center container ">
+		<section class="task-list text-secondary">
+			<h2>Lists of Tasks for the day</h2>
+
+			<div id="tasks">
+				<!-- <div class="task container mt-3">
+					<div class="content">
+						<input 
+							type="text" 
+							class="text rounded-pill  border border-primary text-center text-light bg-dark" 
+							value="New task"
+							readonly>
+					</div>
+					<div class="actions ">
+						<button class="edit rounded-pill  border border-primary text-danger bg-dark">Edit</button>
+						<button class="delete rounded-pill  border border-primary text-danger bg-dark">Delete</button>
+					</div>
+				</div> -->
+			</div>
+		</section>
+	</main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+	<script src="./script.js"></script>
+</body>
+</html
